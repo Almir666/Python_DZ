@@ -5,8 +5,8 @@
 
 
 list = [2, 3, 5, 9, 3]
-j = 0
 sum = 0
+j = 1
 for i in range(0,len(list) - 1):
     if j % 2 != 0:
         sum = sum + list[j]

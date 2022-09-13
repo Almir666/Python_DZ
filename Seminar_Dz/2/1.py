@@ -20,7 +20,7 @@
 #         summ += int(el)
 # print(summ)
 
-n = float(input('Введите число - '))
+n = float(input('Введите число: '))
 while n % 1 > 0:
     n *= 10
 summ = 0

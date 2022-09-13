@@ -7,10 +7,10 @@
 
 list = [2, 3, 4, 5, 6]
 i = 0
-m = 0
-while i < (int(len(list) / 2)):
-    result = list[i] * list[(len(list) - 1)]
-    print(result)
+m = 1
+while i < ((len(list) / 2)):
+    result = list[i] * list[(len(list) - m)]
+    print(result,end=' ')
     i += 1
     m += 1
 
