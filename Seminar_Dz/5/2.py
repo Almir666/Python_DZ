@@ -8,6 +8,7 @@
 # b) Подумайте как наделить бота ""интеллектом""
 
 import random
+Candys = int(input('Введите колличество конфет: '))
 name1 = input('Введите имя первого игрока: ')
 name2 = input('Введите имя второго игрока: ')
 first = random.randint(0, 1)
@@ -17,10 +18,10 @@ if first == 0:
     listName.append(name2)
     print('Первым ходит:', name1)
 else:
-    listName.append(name2)
     listName.append(name1)
+    listName.append(name2)
     print('Первым ходит:', name2)
-Candys = 221
+print(listName)    
 taken = 0
 j = first
 i = first
@@ -36,17 +37,19 @@ if Candys != 0:
             Candys = Ost
             count = taken + step
             taken = count
-            if j == 0:
-                j +=1
-            else:
-                j -=1   
-            if Ost <= 0:
-                print(f'Конец игры, победил {listName[j]}')
-            print('Конфет на столе осталось: ',Ost)
-            print(f'Конфет у {listName[j]}: ', count)  
-            print(f'Теперь вы {listName[i]}')
+           
             if i == 0:
                 i +=1
             else:
-                i -=1   
-      
+                i -=1       
+            if Ost <= 0:
+                print(f'Конец игры, победил {listName[j]}')
+                break
+            print('Конфет на столе осталось: ',Ost)
+            print(f'Конфет у {listName[j]}: ', count)  
+            print(f'Теперь вы {listName[i]}')
+            if j == 0:
+                j +=1
+            else:
+                j -=1 
+         
