@@ -5,17 +5,26 @@
 # - 3 -> 11
 # - 2 -> 10
 
-N = int(input('Введите число: '))
-ost = ''
-while N > 0:
-    ost = str(N % 2) + ost
-    N = N // 2
+# N = int(input('Введите число: '))
+# ost = ''
+# while N > 0:
+#     ost = str(N % 2) + ost
+#     N = N // 2
     
-print(ost)
+# print(ost)
 
 
 
+# a=int(input('Введите число: '))
+# b=bin(a)
+# print(b[2:])
 
+s = ""
+n = int(input("Введите число для преобразовывания десятичного числа в двоичное:\n"))
+while n != 0:
+    s = str(n%2) + s
+    n //=2
+print(s)
 
 
 

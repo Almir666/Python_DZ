@@ -6,5 +6,13 @@
 
 # print(type(value))
 
-a = input()
-print(a)
+# a = input()
+# print(a)
+
+def f(x):
+    if x == 1:
+        return 'целое'
+    elif x == 2.3:
+        return 23
+    else:
+        return
