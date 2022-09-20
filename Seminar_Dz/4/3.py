@@ -10,9 +10,9 @@ for i in numbers:
 print(list)       
 
 
-def elements(nums):
-    nums = [int(i) for i in nums.split()]
-    return list(set(nums))
+# def elements(nums):
+#     nums = [int(i) for i in nums.split()]
+#     return list(set(nums))
 
-numbers = '1 1 2 2 3 455 66 66 2 1'
-print(elements(numbers))
+# numbers = '1 1 2 2 3 455 66 66 2 1'
+# print(elements(numbers))
