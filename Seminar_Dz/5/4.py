@@ -10,31 +10,32 @@ def encode(s):
     while i < len(s):
         count = 1
         while i + 1 < len(s) and s[i] == s[i + 1]:
-            count = count + 1
+            count += 1
             i += 1
         encoding += str(count) + s[i]
         i += 1
     return encoding
 
+with open('encode.txt', 'w') as data:
+    data.write(encode(s))    
+
 with open('encode.txt', 'r') as data:
     decoding = data.read()
 
 def decode(ss:str):
-    count = ''
-    str_decode = ''
-    for char in ss:
-        if char.isdigit():
-            count += char 
+    number = ''
+    words = ''
+    for i in ss:
+        if i.isdigit():
+            number += i 
         else:
-            str_decode += char * int(count)
-            count = ''
-    return str_decode
+            words += i * int(number)
+            number = ''
+    return words
 
 with open('decode.txt', 'w') as data:
     data.write(decode(decoding))
-with open('encode.txt', 'w') as data:
-    data.write(encode(s))
-
-print(decode(decoding))
 
 print(encode(s))
+print(decode(decoding))
+
