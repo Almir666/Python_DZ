@@ -5,8 +5,4 @@
 
 
 numbers = [1, 2, 3, 5, 1, 5, 3, 10]
-list = []
-for i in numbers:
-   if numbers.count(i) == 1:
-       list.append(i)
-print(list) 
+print(list(i for i in numbers if numbers.count(i) == 1)) 
