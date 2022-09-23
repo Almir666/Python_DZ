@@ -15,12 +15,22 @@
 #         j +=1   
 # print(sum)
 
+from random import randint
 
 a = int(input('Введите кол-во чисел в списке for 1# = '))
 list_a = list((i-i+1)*randint(0, 10) for i in range(a))
 print(list_a)
 sum_a = sum(list_a[i] for i in range(1, a, 2))
 print(sum_a)
+
+
+
+
+
+
+
+
+
 
 # list1 = [2, 3, 5, 9, 3]
 # sum = 0

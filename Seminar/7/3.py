@@ -5,8 +5,15 @@
 # triangle(1, 1, 2)
 # Это не треугольник
 # triangle(7, 6, 10)
- 
-# Это треугольник
+ # Это треугольник
 
 def triangle(x, y, z):
-    return x + y > z and 
+    if x + y > z and x + z > y and y + z > x:
+        print('это треугольник')
+    else:
+        print('это не треугольник')
+triangle(1, 1, 2)        
+
+   
+
+
