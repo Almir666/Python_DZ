@@ -16,5 +16,5 @@ list_input = [2,3,5,9,3]
 
 # print(find(list_input))
 
-res = filter(lambda x: x not in list_input[x % 2 == 0], list_input)
-print(int(res))
+res = int(filter(lambda x: x not in list_input[x % 2 == 0], list_input))
+print(res)
